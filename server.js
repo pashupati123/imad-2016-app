@@ -48,7 +48,9 @@ var htmltemplete=
            <hr/>
            <h1>${heading}</h1>
            <div>${data}</div>
+           <div>
           ${content}
+          </div>
        
        </div>
     </body>
