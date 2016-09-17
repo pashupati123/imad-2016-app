@@ -17,7 +17,7 @@ function createtemplete(data)
     var title=data.title;
     var date=data.date;
     var heading=data.heading;
-    
+    var content=data.content;
 var htmltemplete=
 
     `<html>
@@ -49,7 +49,7 @@ var htmltemplete=
            <h1>${heading}</h1>
            <div>${data}</div>
            <div>
-          ${content}
+             ${content}
           </div>
        
        </div>
