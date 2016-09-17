@@ -4,12 +4,66 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+var articleone=
+{
+    title: "aticle-one.pashupati verma.",
+    heading: "ARTICLE ONE",
+    date: "18 sep 2016",
+    content:`<p>THIS IS MY ARTICLE ONE</p>`
+    
+};
+function createtemplete(data)
+{
+    var title=data.title;
+    var date=data.date;
+    var heading=data.heading;
+    
+var htmltemplete=
+
+    `<html>
+    <head>
+        <link href="/ui/style.css" rel="stylesheet" />
+      <title>
+          ${title}
+      </title> 
+     
+    </head>
+    <body>
+        <div  class="container">
+            <div>
+                <img src="http://impreza.us-themes.com/wp-content/uploads/img-6.jpg"/>
+            </div>
+       <div>
+           <nav>
+                <a href="/">Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                
+                <a href="article-two">About&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                
+                <a href="/">Login</a>
+           </nav>
+          
+           
+        </div>
+        
+           <hr/>
+           <h1>${heading}</h1>
+           <div>${data}</div>
+          
+       
+       </div>
+    </body>
+</html>
+`;
+return(htmlltemplete);
+}
+
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
   app.get('/article-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res.send(createtemplete(articleone));
 });
 
 app.get('/article-two', function (req, res) {
