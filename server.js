@@ -13,11 +13,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-two', function (req, res) {
-  res.send("this is server 2");
+  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
 app.get('/article-three', function (req, res) {
-  res.send("this is server 3");
+  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
