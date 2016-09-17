@@ -56,7 +56,7 @@ var htmltemplete=
     </body>
 </html>
 `;
-return htmlltemplete;
+return htmltemplete;
 }
 
 
