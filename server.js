@@ -4,13 +4,33 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articleone=
+var articles=
+{
+'article-one':
 {
     title: "aticle-one.pashupati verma.",
     heading: "ARTICLE ONE",
     date: "18 sep 2016",
     content:`<p>THIS IS MY ARTICLE ONE</p>`
     
+},
+'article-two':
+{
+    title: "aticle-one.pashupati verma.",
+    heading: "ARTICLE ONE",
+    date: "18 sep 2016",
+    content:`<p>THIS IS MY ARTICLE ONE</p>`
+    
+},
+
+'article-three':
+{
+    
+    title: "aticle-one.pashupati verma.",
+    heading: "ARTICLE ONE",
+    date: "18 sep 2016",
+    content:`<p>THIS IS MY ARTICLE ONE</p>`
+}
 };
 function createtemplete(data)
 {
@@ -64,17 +84,14 @@ return htmltemplete;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-  app.get('/article-one', function (req, res) {
-  res.send(createtemplete(articleone));
+ 
+
+ app.get('/:articleName', function (req, res) {
+     var articleName=req.params.articleName;
+  res.send(createtemplete(articles[articleName]));
 });
 
-app.get('/article-two', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
-});
 
-app.get('/article-three', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
-});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
