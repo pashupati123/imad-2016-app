@@ -126,7 +126,7 @@ app.get('/', function (req, res) {
       }
       else
       {
-          if(res.rows.lenght===0)
+          if(res.rows.length===0)
           {
               res.status(404).send('article not found');
           }
