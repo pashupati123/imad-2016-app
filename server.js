@@ -5,8 +5,8 @@ var Pool=require('pg').Pool;
 
 var config=
 {
-    user: 'coco98',
-    database: 'coco98',
+    user: 'pashupati123',
+    database: 'pashupati123',
     host: 'db.imad.hausra-app.io',
     port: '5432',
     password:process.env.DB_PASSWORD
