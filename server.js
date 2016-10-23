@@ -15,7 +15,7 @@ var config=
 var app = express();
 app.use(morgan('combined'));
 
-var articles=
+/*var articles=
 {
 'article-one':
 {
@@ -42,7 +42,8 @@ var articles=
     date: "18 sep 2016",
     content:`<p>THIS IS MY ARTICLE ONE</p>`
 }
-};
+};*/
+
 function createtemplete(data)
 {
     var title=data.title;
