@@ -77,8 +77,12 @@ var htmltemplete=
         </div>
         
            <hr/>
-           <h1>${heading}</h1>
-           <div>${data}</div>
+           <h1>
+           ${heading}
+           </h1>
+           <div>
+           ${date.toDateString()}
+           </div>
            <div>
              ${content}
           </div>
@@ -129,7 +133,7 @@ app.get('/', function (req, res) {
       {
           if(result.rows.length===0)
           {
-              res.status(404).send('article not found');
+           res.status(404).send('article not found');
           }
           else
           {
