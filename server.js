@@ -62,17 +62,18 @@ var htmltemplete=
     </head>
     <body>
         <div  class="container">
+         <nav>
+                <a href="/">Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                
+                <!--a href="article-two">About&nbsp;&nbsp;&nbsp;&nbsp;</a-->
+                
+               
+           </nav>
+          <hr/>
             <div>
                 <img src="http://impreza.us-themes.com/wp-content/uploads/img-6.jpg"/>
             </div>
        <div>
-           <nav>
-                <a href="/">Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                
-                <a href="article-two">About&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                
-                <a href="/">Login</a>
-           </nav>
           
            
         </div>
