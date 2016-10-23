@@ -5,12 +5,14 @@ var Pool=require('pg').Pool;
 
 var config=
 {
-    user:
-    database:
-    host:
-    port:
-    password
-}
+    user: 'coco98',
+    database: 'coco98',
+    host: 'db.imad.hausra-app.io',
+    port: '5432',
+    password:process.env.DB_PASSWORD
+};
+
+
 var app = express();
 app.use(morgan('combined'));
 
@@ -88,11 +90,23 @@ var htmltemplete=
 `;
 return htmltemplete;
 }
+var pool=new Pool(config);
 
 app.get('/test-db', function(req,res)
 {
     
-    
+    pool.query('SELECT * FROM test', function(err,result)
+    {
+        if(err)
+        {
+            res.ststus(500).send(err.toString());
+        }
+        else
+        {
+         res.send(JSON.stringify(result));   
+        }
+        
+    });
 });
 
 app.get('/', function (req, res) {
