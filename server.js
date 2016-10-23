@@ -99,7 +99,7 @@ app.get('/test-db', function(req,res)
     {
         if(err)
         {
-            res.ststus(500).send(err.toString());
+            res.status(500).send(err.toString());
         }
         else
         {
