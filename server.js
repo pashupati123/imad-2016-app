@@ -158,7 +158,7 @@ app.get('/', function (req, res) {
           }
           else
           {
-              var articleData=result.rows[0];
+              var articleData=result.rows[1];
               res.send(createtemplete(articleData));
           }
       }
