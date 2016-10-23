@@ -1,9 +1,19 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var Pool=require('pg').Pool;
 
+var config=
+{
+    user:
+    database:
+    host:
+    port:
+    password
+}
 var app = express();
 app.use(morgan('combined'));
+
 var articles=
 {
 'article-one':
@@ -79,7 +89,11 @@ var htmltemplete=
 return htmltemplete;
 }
 
-
+app.get('/test-db', function(req,res)
+{
+    
+    
+});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
