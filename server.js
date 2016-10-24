@@ -63,7 +63,7 @@ var htmltemplete=
     <body>
         <div  class="container">
          <nav>
-                <a href="/">Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a style="underline=none" href="/">Home</a>
                 
                 <!--a href="article-two">About&nbsp;&nbsp;&nbsp;&nbsp;</a-->
                 
