@@ -70,9 +70,9 @@ var htmltemplete=
                
            </nav>
           <hr/>
-            <div>
+            <!--div>
                 <img src="http://impreza.us-themes.com/wp-content/uploads/img-6.jpg"/>
-            </div>
+            </div-->
        <div>
           
         </div>
