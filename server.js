@@ -86,12 +86,13 @@ var htmltemplete=
            </div>
            <div>
              ${content}
-          </div>
-        <div class="footer">
+               <div class="footer">
                 This Button <button id="counter"> Click Me! </button> has been clicked <span id="count"> 0 </span> times.
                 
             </div>
            
+          </div>
+      
        </div>
     </body>
 </html>
