@@ -74,7 +74,10 @@ var htmltemplete=
                 <img src="http://impreza.us-themes.com/wp-content/uploads/img-6.jpg"/>
             </div>
        <div>
-          
+           <div class="footer">
+                This Button <button id="counter"> Click Me! </button> has been clicked <span id="count"> 0 </span> times.
+                
+            </div>
            
         </div>
         
