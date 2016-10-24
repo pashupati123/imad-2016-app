@@ -4,8 +4,7 @@ button.onclick=function()
 {
   var request=new XMLHttpRequest();
   
-  request.onreadystatechange =functon()
-  {
+ request.onreadystatechange = function(){
       if(request.readyState===XMLHttpRequest.DONE)
       {
          if(request.status===200)
@@ -16,7 +15,7 @@ button.onclick=function()
              
          }
       }
-  }
+  };
   
   request.open('GET','http://pashupati123.imad.hasura-app.io/counter',true);
   request.send(null);
