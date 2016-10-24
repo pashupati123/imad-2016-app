@@ -87,7 +87,7 @@ var htmltemplete=
            <div>
              ${content}
                <div class="footer">
-                This Button <button id="counter"> Click Me! </button> has been clicked <span id="count"> 0 </span> times.
+                
                  <hr/>
                 <input type="text" id= "name" placeholder="name"></input>
                 <input type="submit" value="comment" id="submit_btn"></input>
