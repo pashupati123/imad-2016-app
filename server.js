@@ -77,7 +77,7 @@ var htmltemplete=
           
         </div>
         
-           <hr/>
+           
            <h1>
            ${heading}
            </h1>
