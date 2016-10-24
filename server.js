@@ -148,7 +148,15 @@ app.get('/', function (req, res) {
           }
       }
      });
-   pool.query("SELECT * FROM  articletwo WHERE title= $1", [req.params.articleName],function(err,result)
+     
+  
+  
+});
+
+app.get('/articles/:articleName', function (req, res) {
+     //var articleName=req.params.articleName;
+     //pool.query("SELECT * FROM article WHERE title= '" + req.params.articleName + "'",function(err,result)
+      pool.query("SELECT * FROM articletwo WHERE title= $1", [req.params.articleName],function(err,result)
      {
       if(err)
       {
@@ -162,12 +170,11 @@ app.get('/', function (req, res) {
           }
           else
           {
-              var articleData=result.rows[1];
+              var articleData=result.rows[0];
               res.send(createtemplete(articleData));
           }
       }
      });
-  
 });
 
 
