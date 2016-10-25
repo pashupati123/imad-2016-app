@@ -90,7 +90,7 @@ var htmltemplete=
                <div class="footer">
                 
                  <hr/>
-                <input type="text" id= "name" placeholder="name"></input>
+                <input type="text" id= "name" placeholder="Type Comment"></input>
                 <input type="submit" value="comment" id="submit_btn"></input>
                 <ul id="namelist">
                     
