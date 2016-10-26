@@ -139,6 +139,61 @@ var htmltemplete_blog=
 return htmltemplete_blog;
 }
 
+function createtemplete_aboutme(data)
+{
+    var title=data.title;
+    var date=data.date;
+    var heading=data.heading;
+    var content=data.content;
+var htmltemplete_aboutme=
+
+    `<html>
+    <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/ui/style.css" rel="stylesheet" />
+      <title>
+          ${title}
+      </title> 
+     
+    </head>
+    <body background="http://www.walldevil.com/wallpapers/a24/8861-background-color-ground-back-patterns.jpg">
+        <div  class="container">
+         <nav>
+                <a style="underline=none" href="/">Home</a>
+                
+                <!--a href="article-two">About&nbsp;&nbsp;&nbsp;&nbsp;</a-->
+                
+               
+           </nav>
+          <hr/>
+            <!--div>
+                <img src="http://impreza.us-themes.com/wp-content/uploads/img-6.jpg"/>
+            </div-->
+       <div>
+          
+        </div>
+        
+           
+           <h1>
+           ${heading}
+           </h1>
+           <div>
+           ${date.toDateString()}
+           </div>
+           <div>
+             ${content}
+            </div>
+           
+          </div>
+      
+       </div>
+    </body>
+</html>
+`;
+return htmltemplete_aboutme;
+}
+
+
 var pool=new Pool(config);
 
 app.get('/test-db', function(req,res)
@@ -225,6 +280,32 @@ app.get('/blogs/:blogName', function (req, res) {
   
 });
 
+ app.get('/abouts/:aboutme', function (req, res) {
+     //var articleName=req.params.articleName;
+     //pool.query("SELECT * FROM article WHERE title= '" + req.params.articleName + "'",function(err,result)
+      pool.query("SELECT * FROM about_me WHERE title= $1", [req.params.articleName],function(err,result)
+     {
+      if(err)
+      {
+          res.status(500).send(err.toString());
+      }
+      else
+      {
+          if(result.rows.length===0)
+          {
+           res.status(404).send('article not found');
+          }
+          else
+          {
+              var aboutmeData=result.rows[0];
+              res.send(createtemplete_aboutme(aboutmeData));
+          }
+      }
+     });
+     
+  
+  
+});
 
 
 var counter=0;
