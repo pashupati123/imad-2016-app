@@ -33,7 +33,7 @@ var htmltemplete=
       </title> 
      
     </head>
-    <body background="http://www.dream-wallpaper.com/free-wallpaper/art-wallpaper/background-color-2-wallpaper/1280x800/free-wallpaper-35.jpg">
+    <body background="http://cdn.wallpapersafari.com/96/18/YvgS3B.jpg">
         <div  class="container">
          <nav>
                 <a style="underline=none" href="/">Home</a>
@@ -94,7 +94,7 @@ var htmltemplete_blog=
       </title> 
      
     </head>
-    <body>
+    <body background="http://cdn.wallpapersafari.com/96/18/YvgS3B.jpg">
         <div  class="container">
          <nav>
                 <a style="underline=none" href="/">Home</a>
