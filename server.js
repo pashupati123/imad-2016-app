@@ -15,34 +15,6 @@ var config=
 var app = express();
 app.use(morgan('combined'));
 
-/*var articles=
-{
-'article-one':
-{
-    title: "aticle-one.pashupati verma.",
-    heading: "ARTICLE ONE",
-    date: "18 sep 2016",
-    content:`<p>THIS IS MY ARTICLE ONE</p>`
-    
-},
-'article-two':
-{
-    title: "aticle-one.pashupati verma.",
-    heading: "ARTICLE ONE",
-    date: "18 sep 2016",
-    content:`<p>THIS IS MY ARTICLE ONE</p>`
-    
-},
-
-'article-three':
-{
-    
-    title: "aticle-one.pashupati verma.",
-    heading: "ARTICLE ONE",
-    date: "18 sep 2016",
-    content:`<p>THIS IS MY ARTICLE ONE</p>`
-}
-};*/
 
 function createtemplete(data)
 {
@@ -85,7 +57,7 @@ var htmltemplete=
            <div>
            ${date.toDateString()}
            </div>
-           <div font color="black">
+           <div>
              ${content}
                <div class="footer">
                 
