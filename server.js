@@ -85,7 +85,7 @@ var htmltemplete=
            <div>
            ${date.toDateString()}
            </div>
-           <div>
+           <div font color="black">
              ${content}
                <div class="footer">
                 
