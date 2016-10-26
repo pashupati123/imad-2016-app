@@ -33,7 +33,7 @@ var htmltemplete=
       </title> 
      
     </head>
-    <body background="http://wallpaper.zone/img/423238.jpg">
+    <body background="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLqv_2cymt87T3znC042F2_3fL79mMbtuiq4Gi9yE_3gcD0Me4">
         <div  class="container">
          <nav>
                 <a style="underline=none" href="/">Home</a>
