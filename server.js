@@ -105,7 +105,67 @@ var htmltemplete=
 `;
 return htmltemplete;
 }
+function createtemplete_blog(data)
+{
+    var title=data.title;
+    var date=data.date;
+    var heading=data.heading;
+    var content=data.content;
+var htmltemplete_blog=
 
+    `<html>
+    <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/ui/style.css" rel="stylesheet" />
+      <title>
+          ${title}
+      </title> 
+     
+    </head>
+    <body>
+        <div  class="container">
+         <nav>
+                <a style="underline=none" href="/">Home</a>
+                
+                <!--a href="article-two">About&nbsp;&nbsp;&nbsp;&nbsp;</a-->
+                
+               
+           </nav>
+          <hr/>
+            <!--div>
+                <img src="http://impreza.us-themes.com/wp-content/uploads/img-6.jpg"/>
+            </div-->
+       <div>
+          
+        </div>
+        
+           
+           <h1>
+           ${heading}
+           </h1>
+           <div>
+           ${date.toDateString()}
+           </div>
+           <div>
+             ${content}
+               <div class="footer">
+                
+                 <hr/>
+                <input type="text" id= "name" placeholder="Type Comment"></input>
+                <input type="submit" value="comment" id="submit_btn"></input>
+                <ul id="namelist">
+                    
+                </ul>
+            </div>
+           
+          </div>
+      
+       </div>
+    </body>
+</html>
+`;
+return htmltemplete_blog;
+}
 
 var pool=new Pool(config);
 
@@ -166,6 +226,32 @@ app.get('/submit-name', function(rq,res)
   
 });
 
+app.get('/blogs/:blogName', function (req, res) {
+     //var articleName=req.params.articleName;
+     //pool.query("SELECT * FROM article WHERE title= '" + req.params.articleName + "'",function(err,result)
+      pool.query("SELECT * FROM blog WHERE title= $1", [req.params.blogName],function(err,result)
+     {
+      if(err)
+      {
+          res.status(500).send(err.toString());
+      }
+      else
+      {
+          if(result.rows.length===0)
+          {
+           res.status(404).send('article not found');
+          }
+          else
+          {
+              var blogData=result.rows[0];
+              res.send(createtemplete_blog(blogData));
+          }
+      }
+     });
+     
+  
+  
+});
 
 
 
