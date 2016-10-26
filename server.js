@@ -94,7 +94,7 @@ var htmltemplete_blog=
       </title> 
      
     </head>
-    <body background="http://cdn.wallpapersafari.com/96/18/YvgS3B.jpg">
+    <body background="http://www.walldevil.com/wallpapers/a24/8861-background-color-ground-back-patterns.jpg">
         <div  class="container">
          <nav>
                 <a style="underline=none" href="/">Home</a>
