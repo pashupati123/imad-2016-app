@@ -61,7 +61,7 @@ var htmltemplete=
       </title> 
      
     </head>
-    <body>
+    <body background="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTbRTMEvLdDtkpKObLYJ5-MAZa7jso-MADG8zpiLR8haa_OquAHg">
         <div  class="container">
          <nav>
                 <a style="underline=none" href="/">Home</a>
