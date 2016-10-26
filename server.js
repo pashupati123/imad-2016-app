@@ -283,7 +283,7 @@ app.get('/blogs/:blogName', function (req, res) {
  app.get('/abouts/:aboutme', function (req, res) {
      //var articleName=req.params.articleName;
      //pool.query("SELECT * FROM article WHERE title= '" + req.params.articleName + "'",function(err,result)
-      pool.query("SELECT * FROM about_me WHERE title= $1", [req.params.articleName],function(err,result)
+      pool.query("SELECT * FROM about_me WHERE title= $1", [req.params.aboutme],function(err,result)
      {
       if(err)
       {
