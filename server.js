@@ -61,7 +61,7 @@ var htmltemplete=
       </title> 
      
     </head>
-    <body background="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeIMAqlbL_YHnHGSRSYYeiF99eD7QjdwVUPqm26GqLHDGHUr8G">
+    <body background="http://www.dream-wallpaper.com/free-wallpaper/art-wallpaper/background-color-2-wallpaper/1280x800/free-wallpaper-35.jpg">
         <div  class="container">
          <nav>
                 <a style="underline=none" href="/">Home</a>
