@@ -118,7 +118,7 @@ var htmltemplete_blog=
            <div>
            ${date.toDateString()}
            </div>
-           <div>
+           <div  class="container">
              ${content}
                <div class="footer">
                 
@@ -180,7 +180,7 @@ var htmltemplete_aboutme=
            <div>
            ${date.toDateString()}
            </div>
-           <div>
+           <div  class="container">
              ${content}
             </div>
            
