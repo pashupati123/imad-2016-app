@@ -233,7 +233,15 @@ var htmltemplete_blog=
            </div>
            <div  class="container">
              ${content}
-             
+             <div class="footer">
+                
+                 <hr/>
+                <input type="text" id= "name" placeholder="Type Comment"></input>
+                <input type="submit" value="comment" id="submit_btn"></input>
+                <ul id="namelist">
+                    
+                </ul>
+            </div>
           </div>
 <hr/>
        </div>
