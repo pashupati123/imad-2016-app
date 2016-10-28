@@ -479,7 +479,7 @@ app.get('/resume/:resumeName', function (req, res) {
 
 app.get('/blogs/:blogName', function (req, res) {
      //var articleName=req.params.articleName;
-     //pool.query("SELECT * FROM article WHERE title= '" + req.params.articleName + "'",function(err,result)
+     //pool.query("SELECT * FROM blog WHERE title= '" + req.params.articleName + "'",function(err,result)
       pool.query("SELECT * FROM blog WHERE title= $1", [req.params.blogName],function(err,result)
      {
       if(err)
@@ -499,9 +499,6 @@ app.get('/blogs/:blogName', function (req, res) {
           }
       }
      });
-     
-  
-  
 });
 
  app.get('/abouts/:aboutme', function (req, res) {
