@@ -176,7 +176,8 @@ var htmltemplete_contact=
            </div>
            <div class="container">
              ${content}
-              
+              <a href="https://twitter.com/PashupatiVerma" target="_blank"><img title="Follow Me On Twitter (via NiftyButtons.com)" src="http://www.niftybuttons.com/twitter/twitter_followme.png"></a>
+
             </div>
            <hr/>
           </div>
