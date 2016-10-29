@@ -187,7 +187,11 @@ position:relative;
 z-index:1000;
 }
 
-
+.social{
+     height: 70px;
+    width: 27%;
+    background-color: powderblue;
+}
 
 
         
