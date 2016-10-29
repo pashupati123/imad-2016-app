@@ -53,7 +53,7 @@ submit.onclick = function()
 };
 
 
-document.getElementById("link").style.height=document.getElementById("img").height+"px";
+document.getElementById("link").style.width=document.getElementById("img").width+"px";
 
 
 
