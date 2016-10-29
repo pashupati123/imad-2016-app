@@ -51,3 +51,10 @@ submit.onclick = function()
   request.open('GET','http://pashupati123.imad.hasura-app.io/submit-name='+name,true);
   request.send(null);
 };
+
+
+document.getElementById("link").style.height=document.getElementById("img").height+"px";
+
+
+
+
