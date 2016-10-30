@@ -397,7 +397,7 @@ var htmltemplete_portfolio=
            <div class="container">
              ${content}
               
-           <hr/>
+           
             <div class="footer">
                 
                  <hr/>
