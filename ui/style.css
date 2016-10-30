@@ -189,7 +189,7 @@ z-index:1000;
 
 
 
-   a:hover {
+   a.red:hover {
     color: red;
     
    
