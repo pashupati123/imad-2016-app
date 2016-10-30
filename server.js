@@ -83,7 +83,7 @@ var htmltemplete=
                
            
           </div>
-      
+      <hr/>
        </div>
     </body>
 </html>
@@ -421,7 +421,7 @@ var htmltemplete_portfolio=
 
         
           </div>
-      
+      <hr/>
        </div>
     </body>
 </html>
