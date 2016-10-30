@@ -187,14 +187,13 @@ position:relative;
 z-index:1000;
 }
 
-.social{
-      height: 70px;
-    width: 60%;
-  
-}
 
 
-        
+   a:hover {
+    color: red;
+    
+   
+}     
           
           
           
