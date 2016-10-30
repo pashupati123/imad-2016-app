@@ -59,6 +59,18 @@ var htmltemplete=
            </div>
            <div class="container">
              ${content}
+             <hr/>
+             <div class="center">
+    <p>
+          <a href="/"><b><font color="white" size="5">Home</font></b></a>&nbsp;&nbsp;
+   <a href="https://www.facebook.com/pashupati.verma.5" target="_blank"><b><font color="white" size="5">Facebook</font></b></a>&nbsp;&nbsp;
+     <a href="https://twitter.com/pashupativerma" target="_blank"><b><font color="white" size="5">Twitter</font></b></a>&nbsp;&nbsp;
+       <a href="https://www.linkedin.com/in/pashupatinathverma"><b><font color="white" size="5">LinkedIn</font></b></a>&nbsp;&nbsp;
+        <a href="https://aboutme.google.com/b/103594303224863671567/?_ga=1.107170242.1101935688.1477815173#profile_photo"><b><font color="white" size="5">Google+</font></b></a>
+   
+    </p>
+</div>
+
                <div class="footer">
                 
                  <hr/>
@@ -122,7 +134,18 @@ var htmltemplete_resume=
            </div>
            <div class="container">
              ${content}
-              
+              <hr/>
+              <div class="center">
+    <p>
+          <a href="/"><b><font color="white" size="5">Home</font></b></a>&nbsp;&nbsp;
+   <a href="https://www.facebook.com/pashupati.verma.5" target="_blank"><b><font color="white" size="5">Facebook</font></b></a>&nbsp;&nbsp;
+     <a href="https://twitter.com/pashupativerma" target="_blank"><b><font color="white" size="5">Twitter</font></b></a>&nbsp;&nbsp;
+       <a href="https://www.linkedin.com/in/pashupatinathverma"><b><font color="white" size="5">LinkedIn</font></b></a>&nbsp;&nbsp;
+        <a href="https://aboutme.google.com/b/103594303224863671567/?_ga=1.107170242.1101935688.1477815173#profile_photo"><b><font color="white" size="5">Google+</font></b></a>
+   
+    </p>
+</div>
+
           </div>
       <hr/>
        </div>
@@ -176,7 +199,18 @@ var htmltemplete_contact=
            </div>
            <div class="container">
              ${content}
-             
+             <hr/>
+             <div class="center">
+    <p>
+          <a href="/"><b><font color="white" size="5">Home</font></b></a>&nbsp;&nbsp;
+   <a href="https://www.facebook.com/pashupati.verma.5" target="_blank"><b><font color="white" size="5">Facebook</font></b></a>&nbsp;&nbsp;
+     <a href="https://twitter.com/pashupativerma" target="_blank"><b><font color="white" size="5">Twitter</font></b></a>&nbsp;&nbsp;
+       <a href="https://www.linkedin.com/in/pashupatinathverma"><b><font color="white" size="5">LinkedIn</font></b></a>&nbsp;&nbsp;
+        <a href="https://aboutme.google.com/b/103594303224863671567/?_ga=1.107170242.1101935688.1477815173#profile_photo"><b><font color="white" size="5">Google+</font></b></a>
+   
+    </p>
+</div>
+
             </div>
            <hr/>
           </div>
@@ -233,7 +267,7 @@ var htmltemplete_blog=
            </div>
            <div  class="container">
              ${content}
-             <div class="footer">
+              <div class="footer">
                 
                  <hr/>
                 <input type="text" id= "name" placeholder="Type Comment"></input>
@@ -242,6 +276,19 @@ var htmltemplete_blog=
                     
                 </ul>
             </div>
+             <hr/>
+             <div class="center">
+    <p>
+          <a href="/"><b><font color="white" size="5">Home</font></b></a>&nbsp;&nbsp;
+   <a href="https://www.facebook.com/pashupati.verma.5" target="_blank"><b><font color="white" size="5">Facebook</font></b></a>&nbsp;&nbsp;
+     <a href="https://twitter.com/pashupativerma" target="_blank"><b><font color="white" size="5">Twitter</font></b></a>&nbsp;&nbsp;
+       <a href="https://www.linkedin.com/in/pashupatinathverma"><b><font color="white" size="5">LinkedIn</font></b></a>&nbsp;&nbsp;
+        <a href="https://aboutme.google.com/b/103594303224863671567/?_ga=1.107170242.1101935688.1477815173#profile_photo"><b><font color="white" size="5">Google+</font></b></a>
+   
+    </p>
+</div>
+
+            
           </div>
 <hr/>
        </div>
@@ -357,7 +404,16 @@ var htmltemplete_portfolio=
                     
                 </ul>
             </div>
-           
+           <hr/>
+            <div class="footer">
+                
+                 <hr/>
+                <input type="text" id= "name" placeholder="Type Comment"></input>
+                <input type="submit" value="comment" id="submit_btn"></input>
+                <ul id="namelist">
+                    
+                </ul>
+            </div>
           </div>
       
        </div>
