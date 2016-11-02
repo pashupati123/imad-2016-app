@@ -398,16 +398,8 @@ var htmltemplete_portfolio=
              ${content}
               
            
-            <div class="footer">
-                
-                 <hr/>
-                <input type="text" id= "name" placeholder="Type Comment"></input>
-                <input type="submit" value="comment" id="submit_btn"></input>
-                <ul id="namelist">
-                    
-                </ul>
-            </div>
-            <hr/>
+            
+            
              <div class="center">
     <p>
           <a href="/"><b><font color="#000000" size="5">Home</font></b></a>&nbsp;&nbsp;
