@@ -343,9 +343,19 @@ var htmltemplete_aboutme=
            <div  class="container">
              ${content}
             </div>
-           
+             <div class="center">
+    <p>
+          <a href="/"><b><font color="#000000" size="5">Home</font></b></a>&nbsp;&nbsp;
+   <a href="https://www.facebook.com/pashupati.verma.5" target="_blank"><b><font color="#000000" size="5">Facebook</font></b></a>&nbsp;&nbsp;
+     <a href="https://twitter.com/pashupativerma" target="_blank"><b><font color="#000000" size="5">Twitter</font></b></a>&nbsp;&nbsp;
+       <a href="https://www.linkedin.com/in/pashupatinathverma"><b><font color="#000000" size="5">LinkedIn</font></b></a>&nbsp;&nbsp;
+        <a href="https://aboutme.google.com/b/103594303224863671567/?_ga=1.107170242.1101935688.1477815173#profile_photo"><b><font color="#000000" size="5">Google+</font></b></a>
+   
+    </p>
+</div>
+
           </div>
-      
+      <hr/>
        </div>
     </body>
 </html>
