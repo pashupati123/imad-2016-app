@@ -1,6 +1,6 @@
 function loadLoginForm () {
     var loginHtml = `
-       
+        document.getElementById('login_area');
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
     
