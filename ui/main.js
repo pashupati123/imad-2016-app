@@ -163,6 +163,8 @@ submit.onclick = function()
 
 document.getElementById("link").style.width=document.getElementById("img").width+"px";
 
+loadLogin();
+
 
 
 
