@@ -82,7 +82,8 @@ function loadLoginForm () {
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
-        <li><font color="Green">&#9679;</font><font color="Black"><h3><b>Hi <i>${username}</i></h3></b></font></li>
+    <br>
+        <li><font color="Green">&#9679;</font><font color="Black"><b>Hi <i>${username}</i></b></font></li>
         <br>
         
        <li> <a href="/logout"><input type="submit" value="LogOut" /></a></li>
