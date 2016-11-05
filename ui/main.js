@@ -86,7 +86,7 @@ function loadLoggedInUser (username) {
         <li><font color="Green">&#9679;</font><font color="Black"><b>Hi <i>${username}</i></b></font></li>
         <br>
         
-       <li> <a href="/logout"><input type="submit" value="LogOut" /></a></li>
+       <a href="/logout"><input type="submit" value="LogOut" /></a>
     `;
 }
 
