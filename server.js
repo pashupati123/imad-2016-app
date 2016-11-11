@@ -660,8 +660,8 @@ app.post('/submit-comment/:articleName', function (req, res) {
 
 
 app.get('/contact/:contactName', function (req, res) {
-     //var articleName=req.params.articleName;
-     //pool.query("SELECT * FROM article WHERE title= '" + req.params.articleName + "'",function(err,result)
+     //varcontactName=req.params.contactName;
+     //pool.query("SELECT * FROM contact WHERE title= '" + req.params.contactName + "'",function(err,result)
       pool.query("SELECT * FROM contact WHERE title= $1", [req.params.contactName],function(err,result)
      {
       if(err)
@@ -713,8 +713,8 @@ app.get('/resume/:resumeName', function (req, res) {
 
 
 app.get('/blogs/:blogName', function (req, res) {
-     //var articleName=req.params.articleName;
-     //pool.query("SELECT * FROM blog WHERE title= '" + req.params.articleName + "'",function(err,result)
+     //var blogName=req.params.blogName;
+     //pool.query("SELECT * FROM blog WHERE title= '" + req.params.blogName + "'",function(err,result)
       pool.query("SELECT * FROM blog WHERE title= $1", [req.params.blogName],function(err,result)
      {
       if(err)
@@ -737,8 +737,8 @@ app.get('/blogs/:blogName', function (req, res) {
 });
 
  app.get('/abouts/:aboutme', function (req, res) {
-     //var articleName=req.params.articleName;
-     //pool.query("SELECT * FROM article WHERE title= '" + req.params.articleName + "'",function(err,result)
+     //var aboutme=req.params.aboutme;
+     //pool.query("SELECT * FROM about WHERE title= '" + req.params.aboutme+ "'",function(err,result)
       pool.query("SELECT * FROM about_me WHERE title= $1", [req.params.aboutme],function(err,result)
      {
       if(err)
@@ -761,7 +761,7 @@ app.get('/blogs/:blogName', function (req, res) {
 });
 
  app.get('/portfolio/:portfolioName', function (req, res) {
-     //var articleName=req.params.articleName;
+     //var articleName=req.params.portfolioName;
      //pool.query("SELECT * FROM portfolio WHERE title= '" + req.params.articleName + "'",function(err,result)
       pool.query("SELECT * FROM portfolio WHERE title= $1", [req.params.portfolioName],function(err,result)
      {
@@ -788,13 +788,13 @@ app.get('/blogs/:blogName', function (req, res) {
 
 
 
-var counter=0;
+/*var counter=0;
 app.get('/counter', function(req,res)
 {
    counter=counter+1;
    res.send(counter.toString());
 });
-
+*/
 
 
 app.get('/ui/style.css', function (req, res) {
