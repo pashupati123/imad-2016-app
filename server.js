@@ -48,11 +48,11 @@ var htmltemplete=
     <body background="http://www.walldevil.com/wallpapers/a24/8861-background-color-ground-back-patterns.jpg">
         <div  class="container">
          <nav>
-               <li> <a style="underline=none" href="/">Home</a>
-                 <a style="underline=none" href="https://www.facebook.com/pashupati.verma.5" target="_blank"><b><font color="white" size="5">Facebook</font></b></a>&nbsp;&nbsp;
+               <a style="underline=none" href="/">Home</a>
+                 
                 <!--a href="article-two">About&nbsp;&nbsp;&nbsp;&nbsp;</a-->
                 
-               </li>
+              
            </nav>
           <hr/>
             <!--div>
