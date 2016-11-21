@@ -81,7 +81,7 @@ var htmltemplete=
                 </ul>
             </div>
              <hr/>
-             <div class="center">
+             <div>
     <p>
          <a href="/"><b><font color="white" size="5">Home</font></b></a>&nbsp;&nbsp;
    <a href="https://www.facebook.com/pashupati.verma.5" target="_blank"><b><font color="white" size="5">Facebook</font></b></a>&nbsp;&nbsp;
@@ -92,9 +92,7 @@ var htmltemplete=
    
    
     </p>
-    <p>
-    Home
-    </p>
+    
 </div>
 
                
