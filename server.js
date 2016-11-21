@@ -92,6 +92,9 @@ var htmltemplete=
    
    
     </p>
+    <p>
+    Home
+    </p>
 </div>
 
                
