@@ -154,7 +154,7 @@ var htmltemplete_resume=
               <div class="center">
     <p>
           <a href="/"><b><font color="Black" size="5">Home</font></b></a>&nbsp;&nbsp;
-   <a href="https://www.facebook.com/pashupati.verma.5" target="_blank"><b><font color="white" size="5">Facebook</font></b></a>&nbsp;&nbsp;
+   <a href="https://www.facebook.com/pashupati.verma.5" target="_blank"><b><font color="Black" size="5">Facebook</font></b></a>&nbsp;&nbsp;
      <a href="https://twitter.com/pashupativerma" target="_blank"><b><font color="Black" size="5">Twitter</font></b></a>&nbsp;&nbsp;
        <a href="https://www.linkedin.com/in/pashupatinathverma"><b><font color="Black" size="5">LinkedIn</font></b></a>&nbsp;&nbsp;
         <a href="https://plus.google.com/117938751194236754900"><b><font color="Black" size="5">Google+</font></b></a>&nbsp;&nbsp;
